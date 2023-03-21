@@ -86,7 +86,7 @@ function display() {
   }
   generation();
   generation1();
-  generation2();
+  generation2(); 
 }
 display();
 
@@ -105,32 +105,37 @@ function create() {
     Quantity: "0",
     Rating: "0",
   };
-  txt.push(lst);
-  row = body.insertRow(-1);
-  c0 = row.insertCell(0);
-  c1 = row.insertCell(1);
-  c2 = row.insertCell(2);
-  c3 = row.insertCell(3);
-  c4 = row.insertCell(4);
-  c5 = row.insertCell(5);
-  c6 = row.insertCell(6);
-  c0.innerHTML = "<input type='checkbox' onclick='press(" + cnt + ")'>";
-  c1.innerText = a;
-  c2.innerText = b;
-  c3.innerText = c;
-  c4.innerText = d;
-  c5.innerText = 0;
-  c6.innerText = 0;
-  cnt++;
-  del.push[false];
-  generation();
-  generation1();
-  generation2();
-}
-let flag1 = 0;
-let count = 0;
-let body1 = document.getElementById("tbdy1");
-let foot1 = document.getElementById("tft1");
+  if(a&&b&&c&&d){
+    txt.push(lst);
+    row = body.insertRow(-1);
+    c0 = row.insertCell(0);
+    c1 = row.insertCell(1);
+    c2 = row.insertCell(2);
+    c3 = row.insertCell(3);
+    c4 = row.insertCell(4);
+    c5 = row.insertCell(5);
+    c6 = row.insertCell(6);
+    c0.innerHTML = "<input type='checkbox' onclick='press(" + cnt + ")'>";
+    c1.innerText = a;
+    c2.innerText = b;
+    c3.innerText = c;
+    c4.innerText = d;
+    c5.innerText = 0;
+    c6.innerText = 0;
+    cnt++;
+    del.push[false];
+    generation();
+    generation1();
+    generation2();
+  }
+  else{
+    alert("Enter all Values")
+  }
+  let flag1 = 0;
+  let count = 0;
+  let body1 = document.getElementById("tbdy1");
+  let foot1 = document.getElementById("tft1");
+  }
 
 // Seaching Function 
 
